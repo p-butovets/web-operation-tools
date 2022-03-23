@@ -25,7 +25,20 @@ def print_template(url):
 
 form = cgi.FieldStorage()
 login = form.getfirst("login")
-if login == 'butovets':
+
+
+def get_credentials():
+    url = f'https://rokkwork.space/cgi-bin/credentials.json'
+    headers = {'Accept': 'application/json', 'User-agent': 'Mozilla/5.0'}
+    response = requests.get(url, headers=headers)
+    credentials = json.loads(response.text)
+    return credentials
+
+
+allowed_users = get_credentials()['users'][0]["tools_users"]
+
+
+if login in allowed_users:
     print("Set-Cookie:is_logged = True;")
     print("Set-Cookie:Path = https://rokkwork.space;")
     print("Content-Type: text/html; charset=utf-8\n\n")
