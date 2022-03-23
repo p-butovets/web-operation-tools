@@ -2,7 +2,6 @@
 # -*- coding: UTF-8 -*-
 import cgi
 from mysql.connector import connect, Error
-import json
 import time
 import requests
 import json
@@ -40,7 +39,6 @@ allowed_users = get_credentials()['users'][0]["tools_users"]
 
 if login in allowed_users:
     print("Set-Cookie:is_logged = True;")
-    print("Set-Cookie:Path = https://rokkwork.space;")
     print("Content-Type: text/html; charset=utf-8\n\n")
     print_template('https://rokkwork.space/templates/logged_header.html')
     print_template('https://rokkwork.space/templates/logged_main.html')
