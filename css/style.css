@@ -1,5 +1,5 @@
 .role-marker-red {
-    margin: 0 0.1em;
+    margin: 0.25rem 0.1em;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     color: #fff;
     font-size: 60%;
@@ -9,7 +9,7 @@
 }
 
 .role-marker-green {
-    margin: 0 0.1em;
+    margin: 0.25rem 0.1em;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     color: #fff;
     font-size: 60%;
@@ -19,7 +19,7 @@
 }
 
 .role-marker-orange {
-    margin: 0 0.1em;
+    margin: 0.25rem 0.1em;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     color: #fff;
     font-size: 60%;
@@ -29,7 +29,7 @@
 }
 
 .role-marker-blue {
-    margin: 0 0.1em;
+    margin: 0.25rem 0.1em;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     color: #fff;
     font-size: 60%;
@@ -38,12 +38,22 @@
     border-radius: 0.25rem;
 }
 
-.role-marker-white {
-    margin: 0 0.1em;
+.role-marker-purple {
+    margin: 0.25rem 0.1em;
     padding: 0.3rem 0.3rem 0.3rem 0.3rem;
-    color: #000;
+    color: #fff;
     font-size: 60%;
-    background: #F8FFE5;
+    background: #b5179e;
+    display: inline-block;
+    border-radius: 0.25rem;
+}
+
+.role-marker-gray {
+    margin: 0.25rem 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #fff;
+    font-size: 60%;
+    background: #a5a58d;
     display: inline-block;
     border-radius: 0.25rem;
 }
