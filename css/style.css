@@ -1,0 +1,29 @@
+.role-marker-red {
+    margin: 0 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #fff;
+    font-size: 60%;
+    background: #ef476f;
+    display: inline-block;
+    border-radius: 0.25rem;
+}
+
+.role-marker-green {
+    margin: 0 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #fff;
+    font-size: 60%;
+    background: #06d6a0;
+    display: inline-block;
+    border-radius: 0.25rem;
+}
+
+.role-marker-orange {
+    margin: 0 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #fff;
+    font-size: 60%;
+    background: #FFC43D;
+    display: inline-block;
+    border-radius: 0.25rem;
+}

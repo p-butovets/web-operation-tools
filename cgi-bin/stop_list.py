@@ -101,11 +101,16 @@ else:
         print(f'''
             <div class="col d-flex align-items-start">
                 <div>
-                    <h4 class="fw-bold mb-0">{i['Кухня']}</h4>
+                    <h4 class="fw-bold mb-0" style="
+                                                    padding: 0.5rem 0.5rem 0.5rem 0.25rem;
+                                                    background-color: #3D5A80;
+                                                    color: white;
+                                                    border-radius: 0.25rem;
+                                                "><ion-icon name="home-outline"></ion-icon> {i['Кухня']}</h4>
         ''')
         for k in i['Блюда на стопе']:
             for j in k:
-                print(f'<p>{j}...{k[j]}</p>')
+                print(f'<p style="margin-bottom: 0px;">{j}...{k[j]}</p>')
         print(f'''
             </div>
             </div>    
