@@ -27,3 +27,23 @@
     display: inline-block;
     border-radius: 0.25rem;
 }
+
+.role-marker-blue {
+    margin: 0 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #fff;
+    font-size: 60%;
+    background: #1B9AAA;
+    display: inline-block;
+    border-radius: 0.25rem;
+}
+
+.role-marker-white {
+    margin: 0 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    color: #000;
+    font-size: 60%;
+    background: #F8FFE5;
+    display: inline-block;
+    border-radius: 0.25rem;
+}

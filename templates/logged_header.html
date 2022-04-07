@@ -17,19 +17,18 @@
     <header class="p-3 text-white" style="background-color:#293241">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <form action="/cgi-bin/main.py" method="post" class="d-flex">
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/cgi-bin/main.py" class="nav-link px-2 text-white">Головна</a></li>
                 <li><a href="/cgi-bin/stop_list.py" class="nav-link px-2 text-white">Стоп-лист</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Хронометраж</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Тепловая карта</a></li>
                 <li><a href="https://datastudio.google.com/u/0/reporting/3ffe8586-7425-4983-bb87-c8c87ea86ac1/page/oYSHC/edit?s=t4iAi4e4fJU" target="_blank" class="nav-link px-2 text-white">iikoDashboard</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Checkbox Status</a></li>
-              </ul>
-                <button type="submit" class="btn btn-outline-light me-2" style="margin-left: 0.5rem!important;">Выход</button>
-            </form>
+            </ul>
+                <a href="/cgi-bin/main.py?login=logout"><button class="btn btn-outline-light me-2" style="margin-left: 0.5rem!important;"><ion-icon name="log-out-outline"></ion-icon></button></a>
           </div>
         </div>
-      </header>
+    </header>
 <!--Header::End-->
 
 <!--Main Content::Start-->
