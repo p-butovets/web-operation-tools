@@ -90,11 +90,11 @@ else:
         <div class="accordion-item">
             <h2 class="accordion-header" id="heading{accodion_ids_counter}">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{accodion_ids_counter}" aria-expanded="false" aria-controls="collapse{accodion_ids_counter}">
-                <span class="badge bg-secondary">{heatmap_result['name']}</span>
+                <span class="badge bg-success">{heatmap_result['name']}</span>
               </button>
             </h2>
             <div id="collapse{accodion_ids_counter}" class="accordion-collapse collapse" aria-labelledby="heading{accodion_ids_counter}" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body font-monospace">
                 {heatmap_result['html']}
                 <div id="mapid{accodion_ids_counter}" style="height: 200px; margin-top: 1rem;"></div>
                 <script>
@@ -137,11 +137,11 @@ else:
         <div class="accordion-item">
             <h2 class="accordion-header" id="heading{accodion_ids_counter}">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{accodion_ids_counter}" aria-expanded="false" aria-controls="collapse{accodion_ids_counter}">
-                <span class="badge bg-secondary">{site_coords_result['name']}</span>
+                <span class="badge bg-success">{site_coords_result['name']}</span>
               </button>
             </h2>
             <div id="collapse{accodion_ids_counter}" class="accordion-collapse collapse" aria-labelledby="heading{accodion_ids_counter}" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body font-monospace">
                 {site_coords_result['text']}
               </div>
             </div>
@@ -153,3 +153,13 @@ else:
     # Prnting main container::Ends #
     print('</div>')
     print_template('https://rokkwork.space/templates/footer.html')
+
+
+
+
+
+
+
+
+
+

@@ -92,28 +92,45 @@ else:
                  database=db_credentials['database'],
                  )
     CURSOR = db.cursor()
-
-    print(f'''
-        <h2 class="pb-2 border-bottom" style="padding-left: 3rem;">Актуальный стоп-лист</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5" style="padding-left: 3rem; padding-right: 3rem;">
-        ''')
+    print('<div class="container">')
+    print('<h2 class="pb-2" style="padding-left: 3rem;">Актуальный стоп-лист</h2>')
+    print('<div class="accordion" id="accordionExample">')  # accordion open
+    accordion_ids_counter = 1
     for i in get_stop_list(CURSOR):
         print(f'''
-            <div class="col d-flex align-items-start">
-                <div>
-                    <h4 class="fw-bold mb-0" style="
-                                                    padding: 0.5rem 0.5rem 0.5rem 0.25rem;
-                                                    background-color: #3D5A80;
-                                                    color: white;
-                                                    border-radius: 0.25rem;
-                                                "><ion-icon name="home-outline"></ion-icon> {i['Кухня']}</h4>
-        ''')
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{accordion_ids_counter}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{accordion_ids_counter}" aria-expanded="false" aria-controls="collapse{accordion_ids_counter}">
+                <span class="badge bg-success"><ion-icon name="home-outline"></ion-icon>&nbsp;{i['Кухня']}</span>
+              </button>
+            </h2>
+            <div id="collapse{accordion_ids_counter}" class="accordion-collapse collapse" aria-labelledby="heading{accordion_ids_counter}" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Назва</th>
+                      <th scope="col">Кількість</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+              ''')
         for k in i['Блюда на стопе']:
             for j in k:
-                print(f'<p style="margin-bottom: 0px;">{j}...{k[j]}</p>')
-        print(f'''
-            </div>
-            </div>    
+                print(f'''
+                <tr>
+                  <td>{j}</td>
+                  <td>{k[j]}</td>
+                </tr>
+                ''')
+        print('''       
+                <tbody>
+                </table>
+              </div>
+             </div>
+         </div>
         ''')
-    print("</div>")
+        accordion_ids_counter += 1
+    print('</div>')  # accordion close
+    print('</div>')  # container close
     print_template('https://rokkwork.space/templates/footer.html')
