@@ -56,6 +56,7 @@ elif login in allowed_users or os.environ['HTTP_COOKIE'].split("=")[1] == "True"
     print("Set-Cookie:is_logged = True;")
     print("Content-Type: text/html; charset=utf-8\n\n")
     print_template('https://rokkwork.space/templates/logged_header.html')
+    print('<script>document.title = "Головна";</script>')
     print_template('https://rokkwork.space/templates/logged_main.html')
     print_template('https://rokkwork.space/templates/footer.html')
 else:

@@ -75,6 +75,7 @@ if is_logged_check() == "False":
     print_template('https://rokkwork.space/templates/footer.html')
 else:
     print_template('https://rokkwork.space/templates/logged_header.html')
+    print('<script>document.title = "Heatmap App";</script>')
     print(f'''
     <h2 class="pb-2 border-bottom" style="padding-left: 3rem;">Теплова карта</h2>
     <form class="pure-form pure-form-stacked" action="/cgi-bin/heat_map.py" method="post">

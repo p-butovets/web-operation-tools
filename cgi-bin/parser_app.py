@@ -37,6 +37,7 @@ if is_logged_check() == "False":
     print_template('https://rokkwork.space/templates/footer.html')
 else:
     print_template('https://rokkwork.space/templates/logged_header.html')
+    print('<script>document.title = "Parser App";</script>')
 
     # Printing main container:: Start #
 
@@ -94,8 +95,8 @@ else:
               </button>
             </h2>
             <div id="collapse{accodion_ids_counter}" class="accordion-collapse collapse" aria-labelledby="heading{accodion_ids_counter}" data-bs-parent="#accordionExample">
-              <div class="accordion-body font-monospace">
-                {heatmap_result['html']}
+              <div class="accordion-body">
+                <code>{heatmap_result['html']}</code>
                 <div id="mapid{accodion_ids_counter}" style="height: 200px; margin-top: 1rem;"></div>
                 <script>
                 var mymap{accodion_ids_counter} = L.map("mapid{accodion_ids_counter}").setView([50.45620065316121, 30.504618701624874], 10);
@@ -141,8 +142,8 @@ else:
               </button>
             </h2>
             <div id="collapse{accodion_ids_counter}" class="accordion-collapse collapse" aria-labelledby="heading{accodion_ids_counter}" data-bs-parent="#accordionExample">
-              <div class="accordion-body font-monospace">
-                {site_coords_result['text']}
+              <div class="accordion-body">
+                <code>{site_coords_result['text']}</code>
               </div>
             </div>
       </div>
@@ -153,13 +154,3 @@ else:
     # Prnting main container::Ends #
     print('</div>')
     print_template('https://rokkwork.space/templates/footer.html')
-
-
-
-
-
-
-
-
-
-

@@ -84,6 +84,7 @@ if is_logged_check() == "False":
     print_template('https://rokkwork.space/templates/footer.html')
 else:
     print_template('https://rokkwork.space/templates/logged_header.html')
+    print('<script>document.title = "Stop List App";</script>')
 
     db_credentials = get_credentials("rokk_db")[0]
     db = connect(host=db_credentials['host'],
