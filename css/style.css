@@ -64,6 +64,7 @@
     margin-top: 10px;
 }
 
-a:hover {
+
+a:hover.nav-link {
     color: #fd7e14 !important;
 }
