@@ -22,22 +22,25 @@
 <!--Head::End-->
 
 <!--Header::Start-->
-    <header class="p-3 text-white" style="background-color:#293241">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/cgi-bin/main.py" class="nav-link px-2 text-white">Головна</a></li>
-                <li><a href="/cgi-bin/stop_list.py" class="nav-link px-2 text-white">"Стоп-ліст"</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Хронометраж</a></li>
-                <li><a href="/cgi-bin/heat_map.py" class="nav-link px-2 text-white">Теплова карта</a></li>
-                <li><a href="https://datastudio.google.com/u/0/reporting/3ffe8586-7425-4983-bb87-c8c87ea86ac1/page/oYSHC/edit?s=t4iAi4e4fJU" target="_blank" class="nav-link px-2 text-white">iikoDashboard</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Checkbox Status</a></li>
-                <li><a href="/cgi-bin/parser_app.py" class="nav-link px-2 text-white">KMZ-парсер</a></li>
-            </ul>
-                <a href="/cgi-bin/main.py?login=logout"><button class="btn btn-outline-light me-2" style="margin-left: 0.5rem!important;"><ion-icon name="log-out-outline"></ion-icon></button></a>
-          </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="/cgi-bin/main.py">TOOLS</a>
+      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a href="/cgi-bin/main.py" class="nav-link px-2 text-white">Головна</a>
+        <a href="/cgi-bin/stop_list.py" class="nav-link px-2 text-white">"Стоп-ліст"</a>
+        <a href="#" class="nav-link px-2 text-white">Хронометраж</a>
+        <a href="/cgi-bin/heat_map.py" class="nav-link px-2 text-white">Теплова карта</a>
+        <a href="#" class="nav-link px-2 text-white">Checkbox Status</a>
+        <a href="/cgi-bin/parser_app.py" class="nav-link px-2 text-white">KMZ-парсер</a>
+        <a href="/cgi-bin/utils_app.py" class="nav-link px-2 text-white">iiko API utils</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </nav>
 <!--Header::End-->
 
 <!--Main Content::Start-->
