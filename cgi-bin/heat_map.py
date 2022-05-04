@@ -125,4 +125,5 @@ else:
         print(a + b)
 
     print('</script>')
+    print('</div>')
     print_template('https://rokkwork.space/templates/footer.html')
